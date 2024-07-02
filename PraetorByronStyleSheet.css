@@ -1,0 +1,142 @@
+.home{
+  background-image: url('HumaAI.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#pageTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+body{
+  background-color: #052137;
+}
+
+h1, h2{
+  color: rgb(255, 230, 177);
+  padding: 10px;
+}
+
+.nav, a{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  font-size: 25px;
+  color: rgb(255, 240, 152);
+}
+a:hover{
+  color: goldenrod
+}
+a:active{
+  color: transparent;
+}
+
+.myForm {
+  display: flex;
+  background-color: rgb(255, 230, 177);
+  border-radius: 3px;
+  padding: 1.8em;
+}
+#training-box{
+  border: 1px rgb(255, 230, 177);
+} 
+#training-container{
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(255, 230, 177);;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+
+.message > textarea {
+ flex: 1; 
+ min-width: 18em;
+}
+
+.contact {
+   flex: 1; 
+  order: 1;
+   margin-right: 2em; 
+}
+
+.contact input {
+  width: 100%;
+}
+
+.contact input,
+.contact button {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.contact button {
+ background: #052137;
+ color: rgb(255, 230, 177);
+ border: 0;
+}
+.salaryData{
+  display: flex;
+}
+.table{
+  display: flex;
+  margin-left: 6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  justify-content: flex-start;
+  color:  rgb(255, 230, 177);
+  width: 100%;
+  border: 1px rgb(255, 230, 177);
+}
+.importedVideo{
+  display: flex;
+  justify-content: flex-start;
+
+  margin: 10px;
+  padding: 10px;
+  margin-left: 6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.images-container {
+  display: flex;
+  justify-content: space-around;
+}
+img{
+      width:  350px;
+    height: 250px;
+    margin-left: 5rem;
+}
+#resume{
+  margin-left: -18px;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  
+}
+button {
+  background-color: rgb(255, 230, 177);
+  border: none;
+  color:  #052137;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 16px;margin: 20px;
+}
+video{
+  width: 500px;
+  height: 500px;
+  margin-right: 1rem;
+}
+#transcriptIntro{
+  color:  rgb(255, 230, 177);
+}
+.intro-container{
+  display: flex;
+  justify-content: center;
+}

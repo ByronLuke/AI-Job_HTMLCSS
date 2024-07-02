@@ -7,23 +7,79 @@
     <meta name="keywords" content="Yellowstone, Wolf, Conservation">
     <meta name="author" content="Byron Praetor">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="PraetorByronStyleSheet..css">
+    <link rel="stylesheet" type="text/css" href="PraetorByronStyleSheet.css">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title> AiDev.Career </title>
 </head>
+<script>
+    function onVideo() {
+        $("#videoIntro").toggleClass("d-none")
+    }
+    function onAudio() {
+        $("#audioIntro").toggleClass("d-none")
+    }
+    function onTranscript() {
+        $("#transcriptIntro").toggleClass("d-none")
+    }
+
+</script>
 
 <body>
     <div class="nav">
-        <a href="homepage.html">Home</a>
+        <a href="PraetorByronHomePage.html">Home</a>
         <a href="skills.html">Knowledge/Skills</a>
         <a href="training.html">Training/Education</a>
         <a href="salary.html">Salary/Benefits</a>
         <a href="submissions.html">Submissions</a>
     </div>
     <div>
-       <h1 id="pageTitle"> Your AI Developement Journey Begins Here</h1>
+        <h1 id="pageTitle"> Your AI Developement Journey Begins Here</h1>
     </div>
+    <div class="btn-container">
+        <button onclick=onVideo()>
+            Video Description with CEO
+        </button>
+        <button onclick=onAudio()>
+            Audio
+        </button>
+        <button onclick=onTranscript()>
+            Transcript
+        </button>
+    </div>
+    <audio controls class="d-none" id="audioIntro">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+<div class="intro-container">
+    <video class="d-none" id="videoIntro" src="video.webm"></video>
+
+    <div class="d-none" id="transcriptIntro">
+        <p>
+            Welcome to AI Dev, where we're shaping the future with cutting-edge AI technology. We are seeking talented
+            individuals to join our team as Machine Learning Engineers. Our company is at the forefront of AI
+            innovation, and we are looking for passionate professionals who are eager to contribute to groundbreaking
+            projects that make a real impact.
+            <br><br>
+            As a Machine Learning Engineer at AI Dev, your key responsibilities will include designing and implementing
+            sophisticated machine learning models. You will be deeply involved in data preprocessing, model evaluation,
+            and algorithm optimization to ensure our AI solutions are accurate and efficient. Working closely with
+            cross-functional teams, you will develop AI-driven solutions that address complex problems and drive our
+            technological advancements.
+            <br><br>
+            Ideal candidates will possess strong programming skills in Python and have hands-on experience with machine
+            learning frameworks such as TensorFlow or PyTorch. Familiarity with data science tools and techniques,
+            including SQL and Pandas, is essential. Additionally, an advanced understanding of machine learning
+            algorithms and techniques, coupled with strong analytical and problem-solving abilities, is required to
+            excel in this role.
+            <br><br>
+            At AI Dev, we are committed to fostering a culture of continuous learning and professional development. We
+            provide ample opportunities for our team members to grow their expertise and stay updated with the latest
+            advancements in the AI field. Join us at AI Dev and be part of a dynamic team that's revolutionizing
+            technology. If you are ready to make a significant impact and advance your career, apply now and start your
+            journey with AI Dev today!
+        </p>
+    </div>
+</div>
 </body>
 <script>
 </script>
